@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>SmartPick — Каталог смартфонов</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="6" y="2" width="12" height="20" rx="3" stroke="#2F6FED" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="#2F6FED"/></svg>
+        SmartPick
+    </div>
+    <div class="search-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#98a1b3" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" placeholder="Поиск смартфонов...">
+    </div>
+    <div class="header-actions">
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="#3d4356" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg><span>Избранное</span></a>
+        <a href="cart.html"><svg viewBox="0 0 24 24" fill="none" stroke="#3d4356" stroke-width="2"><path d="M3 6h18M6 6l1.5 13h9L18 6M9 10v5M15 10v5"/></svg><span>Корзина</span></a>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="#3d4356" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg><span>Профиль</span></a>
+        <button class="burger"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div class="crumbs"><a href="#">Главная</a> / <b>Смартфоны</b></div>
+
+<div class="catalog-layout">
+
+    <aside class="filters">
+        <h3>Фильтры <button>Сбросить всё</button></h3>
+
+        <div class="filter-group">
+            <div class="f-title">Бренд</div>
+            <label class="filter-row"><span><input type="checkbox" checked> Apple</span><span class="count">24</span></label>
+            <label class="filter-row"><span><input type="checkbox"> Samsung</span><span class="count">18</span></label>
+            <label class="filter-row"><span><input type="checkbox"> Xiaomi</span><span class="count">20</span></label>
+            <label class="filter-row"><span><input type="checkbox"> Google</span><span class="count">6</span></label>
+            <label class="filter-row"><span><input type="checkbox"> HONOR</span><span class="count">7</span></label>
+        </div>
+
+        <div class="filter-group">
+            <div class="f-title">Цена, Br</div>
+            <input type="range" min="500" max="3500" value="2500" style="width:100%;">
+            <div class="filter-row"><span>500</span><span>3 500</span></div>
+        </div>
+
+        <div class="filter-group">
+            <div class="f-title">Память</div>
+            <label class="filter-row"><span><input type="checkbox"> 128 ГБ</span><span class="count">42</span></label>
+            <label class="filter-row"><span><input type="checkbox"> 256 ГБ</span><span class="count">38</span></label>
+            <label class="filter-row"><span><input type="checkbox"> 512 ГБ</span><span class="count">21</span></label>
+        </div>
+    </aside>
+
+    <main class="catalog-main">
+        <div class="catalog-top">
+            <div>
+                <h1>Смартфоны</h1>
+                <p>Найдено 103 модели</p>
+            </div>
+            <select class="sort-select">
+                <option>Сначала популярные</option>
+                <option>Сначала дешевле</option>
+                <option>Сначала дороже</option>
+                <option>Новинки</option>
+            </select>
+        </div>
+
+        <div class="grid">
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/images (1).png" alt="Apple iPhone 15">
+                </div>
+                <div class="card-body">
+                    <h3>Apple iPhone 15</h3>
+                    <div class="specs"><span>128 ГБ</span><span>·</span><span>6.1″</span><span>·</span><span>48 МП</span></div>
+                    <div class="price-row"><span class="price">2 699 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/images (2).png" alt="Samsung Galaxy S24">
+                </div>
+                <div class="card-body">
+                    <h3>Samsung Galaxy S24</h3>
+                    <div class="specs"><span>256 ГБ</span><span>·</span><span>6.2″</span><span>·</span><span>50 МП</span></div>
+                    <div class="price-row"><span class="price">2 199 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/images (3).png" alt="Xiaomi 14">
+                </div>
+                <div class="card-body">
+                    <h3>Xiaomi 14</h3>
+                    <div class="specs"><span>256 ГБ</span><span>·</span><span>6.36″</span><span>·</span><span>50 МП</span></div>
+                    <div class="price-row"><span class="price">1 999 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/google-pixel-8-1700125144.jpg" alt="Google Pixel 8">
+                </div>
+                <div class="card-body">
+                    <h3>Google Pixel 8</h3>
+                    <div class="specs"><span>128 ГБ</span><span>·</span><span>6.2″</span><span>·</span><span>50 МП</span></div>
+                    <div class="price-row"><span class="price">1 799 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/oneplus.png" alt="OnePlus 12">
+                </div>
+                <div class="card-body">
+                    <h3>OnePlus 12</h3>
+                    <div class="specs"><span>512 ГБ</span><span>·</span><span>6.82″</span><span>·</span><span>50 МП</span></div>
+                    <div class="price-row"><span class="price">2 599 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/images(6).png" alt="HONOR Magic6 Pro">
+                </div>
+                <div class="card-body">
+                    <h3>HONOR Magic6 Pro</h3>
+                    <div class="specs"><span>512 ГБ</span><span>·</span><span>6.8″</span><span>·</span><span>50 МП</span></div>
+                    <div class="price-row"><span class="price">2 299 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/images(5).png" alt="Xiaomi Redmi Note 13">
+                </div>
+                <div class="card-body">
+                    <h3>Xiaomi Redmi Note 13</h3>
+                    <div class="specs"><span>128 ГБ</span><span>·</span><span>6.67″</span><span>·</span><span>108 МП</span></div>
+                    <div class="price-row"><span class="price">999 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+            <a class="card" href="product.html">
+                <div class="card-media">
+                    <span class="fav"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></span>
+                    <img src="assets/realme.png" alt="realme GT 5">
+                </div>
+                <div class="card-body">
+                    <h3>realme GT 5</h3>
+                    <div class="specs"><span>256 ГБ</span><span>·</span><span>6.74″</span><span>·</span><span>50 МП</span></div>
+                    <div class="price-row"><span class="price">1 999 Br</span></div>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </a>
+
+        </div>
+    </main>
+</div>
+
+<footer class="site-footer">© 2026 SmartPick — учебный проект, лабораторная работа №5 «Вёрстка мобильно-ориентированного приложения»</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
